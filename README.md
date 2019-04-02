@@ -3,7 +3,7 @@
 Seriously just barely enough code to send an SMS notification using Twilio's Notify API.
 I'm using a `binding.pry` to give you a prompt to do stuff. Really, this is minimal.
 
-## Configuration
+## Configuration & First Use
 
 Get a Twilio account. Make sure it's got a little credit in it. Purchase an outgoing number. Pull out your API credentials.
 
@@ -35,3 +35,7 @@ Nice.
 Head back into the Pry session (it's cool if you need to restart it), and fire off a call to `associate_notify_with_messaging_service`.
 
 Now if you `continue` or Ctrl+D to get out of Pry and continue the script, it should complete successfully, and you should get a text at the number you supplied in .env.
+
+## Ongoing Usage
+
+After a first successful run & provisioning as described above, running the script straight through without additional calls (and either `continue`ing past the `binding.pry` or just commenting it out) will fire off another SMS notification.
