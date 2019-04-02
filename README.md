@@ -18,7 +18,7 @@ AUTH_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 PHONE_DEST="+18888675309"
 ```
 
-Run the script: `ruby ./poc.rb`. You'll end up in a Pry shell from the call to `binding.pry`. Yay! You'll want to provisiong a Notify service and a Messaging service. Within the Pry console, do a:
+Run the script: `ruby ./twililight.rb`. You'll end up in a Pry shell from the call to `binding.pry`. Yay! You'll want to provisiong a Notify service and a Messaging service. Within the Pry console, do a:
 ```ruby
 > notify_service
 #<Twilio::REST::Notify::V1::lots of other good stuff>
